@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  
+    <title>Admin Login</title>
+ <link rel="icon" href="https://www.freeiconspng.com/uploads/study-icon-21.png"/>
+<style>
+    .box{
+       
+       border: #261d7c 3px;
+       border-radius: 10px;
+       border-style: solid;
+       align-content: center;
+       text-align: center;
+       width: 350px;
+       height: 500px;
+       color:rgb(218, 218, 218)smoke;
+  background-color: rgba(9, 12, 51, 0.5);
+
+
+  position: absolute;
+    top: 50%;
+    left: 40%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    }
+    .btn-submit {
+    background-color: #070d63 !important;
+    border-color: #070d63 !important;    
+    color: rgb(218, 218, 218);
+    -webkit-border-radius: 4px; 
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    font-size: 20px;
+    height:40px;
+    }
+    .row {
+    padding: 10px 0;
+    
+}
+h2 {
+  color: rgb(218, 218, 218);
+  text-align: left ;
+  margin-left: 70px;
+  font-size: 50px;
+  font-weight: 400 !important;
+
+}
+::placeholder {
+  color: rgb(218, 218, 218);
+  text-decoration-style: none;
+}
+a{
+    color:thistle;
+}
+button{
+    background-color: #070d63 !important;
+    border-color: #070d63 !important; 
+    height: 30px;
+    width:70px;  
+    float: bottom right;
+    color:whitesmoke;
+
+    
+}
+#fm1 .row input[type=text],
+    #fm1 .row input[type=password] { width: 80%; padding: 10px;
+         alignment-adjust:centerline; box-sizing: border-box;
+          -webkit-box-sizing: border-box; -moz-box-sizing:
+           border-box; }
+    #fm1 .row .btn-submit { outline: none; -webkit-appearance: none;
+         -webkit-border-radius: 0; border: 0; background: #70ba61;
+          color: rgb(218, 218, 218); font-weight: bold;
+         width: 80%; padding: 10px 10px; -webkit-border-radius: 3px;
+          -moz-border-radius: 3px; border-radius: 3px; }
+    .form-control.form-control-solid {
+  background-color: #ffffff63;
+  border-color: #89a1dd;
+  color: #ffffff;
+  height: 40px;
+  width: 100%;
+  
+  
+}
+.form-control.form-control-solid:focus {
+  border-color: #7094f0;
+  background-color: rgb(245, 255, 255);
+}
+
+button{
+   
+}
+
+</style>
+</head>
+<body style="background-image: url(https://wallpaperaccess.com/full/1567666.png);background: size 100%; ;">
+    
+<div class="box" id="login">
+
+    <form id="fm1" action="/cas/login?service=https%3A%2F%2Faumscb.amrita.edu%2Faums%2FJsp%2FCore_Common%2Findex.jsp%3Ftask%3Doff" method="post">
+
+        
+
+        <h2>Admin <br> Login</h2><br>
+        
+
+        <section class="row">
+                    
+                    <input class="form-control form-control-solid" id="username" type="text" placeholder="Username" name="username" required/>
+                
+         </section>
+    
+    
+
+        <section class="row">
+        
+                  <input class="form-control form-control-solid" type="password" id="password" placeholder="Password" name="password" required/>
+</section>
+<br> 
+    
+        <section class="row btn-row">
+           
+     
+            <input style="font-size: 20px;" class="btn-submit" name="submit"value="Login"  type="submit" />
+         </section>  
+         
+         <p style="color:#ffffff;font-size: 15px;">BACK TO <a href="" >MAIN PAGE</a></p>
+        
+    </form></div>
+    <button style="float: right;">Student</button><button style="float: right;margin-right: 10px;">Register</button><p style="text-align:right;color:#ffffff;margin-right:180px;font-size:20px;">Not a Admin??<BR></p>
+</body>
+</html>
