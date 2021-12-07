@@ -3,6 +3,22 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
+    <script>
+   
+        function validate(){    
+        var id = document.getElementById("ID").value;
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var pd = document.getElementById("r-password").value;
+        if(ID == "rohith" ){
+     alert('ID already exists');alert('Error on login');
+     return false;    
+     }
+     else if(lenght.password<6){alert('password is too small');return false;}
+     else if (password==pd){alert('succesfully registered');return true;}
+     
+     
+     }</script>
   
     <title>REGISTRATION</title>
  <link rel="icon" href="https://www.freeiconspng.com/uploads/study-icon-21.png"/>
@@ -15,7 +31,7 @@
        align-content: center;
        text-align: center;
        width: 400px;
-       height: 600px;
+       height: 630px;
        color:rgb(218, 218, 218)smoke;
   background-color: rgba(65, 5, 121, 0.75);
 
@@ -171,11 +187,11 @@ input[type=radio]:checked ~ label{
     
 <div class="box" id="login">
 
-    <form id="fm1" action="/cas/login?service=https%3A%2F%2Faumscb.amrita.edu%2Faums%2FJsp%2FCore_Common%2Findex.jsp%3Ftask%3Doff" method="post">
+    <form id="fm1" action="" method="post" onsubmit="return validate(">
 
         
 
-        <h2>REGISTRATION</h2><br>
+        <h2>REGISTRATION</h2>
         
         <section class="row">
                     
@@ -192,32 +208,36 @@ input[type=radio]:checked ~ label{
 
         <section class="row">
         
-                  <input class="form-control form-control-solid" type="password" id="password" placeholder="Password" name="password" required/>
-                 
-                </section>
-                <section>
+                  <input class="form-control form-control-solid" type="password" id="password" placeholder="Password" name="password" required/><br><br>
+                  <input class="form-control form-control-solid" type="password" id="r-password" placeholder="re-enter Password" name="r-password" required/>
                     <ul>
                         <li>
-                          <input type="radio" id="f-option" name="selector">
-                          <label for="f-option"><b>STUDENT</b></label>
+                          <input type="radio" id="f-option" name="selector" required>
+                          <label for="f-option" ><b>STUDENT</b></label>
                           
                           <div class="check"></div>
                         </li>
                         
                         <li>
-                          <input type="radio" id="s-option" name="selector">
+                          <input type="radio" id="s-option" name="selector" required>
                           <label for="s-option"><b> ADMIN</b></label>
                           
-                          <div class="check"><div class="inside"></div></div>
+                          <div class="check"></div>
+
                         </li></ul>
-                  </section>
-  
-<br> <br>
-    
+                        
+                  </section>              
         <section class="row btn-row">
            
-     <br>
-            <input style="font-size: 20px;" class="btn-submit" name="submit"value="REGISTER"  type="submit" />
+     <p><br></p> 
+           <br><br> <button style="background-color: #0a77f3 !important;    
+           color: rgb(218, 218, 218);
+           -webkit-border-radius: 4px;
+           -moz-border-radius: 4px;
+           border-radius: 10px;
+           font-size: 20px;
+           width:260px;
+           height:40px;">Register</button>
          </section>  
          
          <p style="color:#ffffff;font-size: 15px;">BACK TO <a href="" >MAIN PAGE</a></p>
