@@ -2,9 +2,25 @@
 <html lang="en">
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin Login</title>
 <head>
+  <script>
+   
+   function validate(){
+     var attempt = 3;
+       for (let i = 0; i < attempt; i++){
+   var username = document.getElementById("un").value;
+   var password = document.getElementById("pd").value;
+   if(username == "rohith" && password == "rohith"){
+alert('You are logged in.');
+return true;    
+}else {
+alert('Error on login');
+return false;
+}}}</script>
+
   
-    <title>Admin Login</title>
+    
  <link rel="icon" href="https://www.freeiconspng.com/uploads/study-icon-21.png"/>
 <style>
     .box{
@@ -78,7 +94,7 @@ button{
     .form-control.form-control-solid {
   background-color: #ffffff63;
   border-color: #89a1dd;
-  color: #ffffff;
+  color: #030000;
   height: 40px;
   width: 100%;
   
@@ -89,9 +105,6 @@ button{
   background-color: rgb(245, 255, 255);
 }
 
-button{
-   
-}
 
 </style>
 </head>
@@ -99,7 +112,7 @@ button{
     
 <div class="box" id="login">
 
-    <form id="fm1" action="/cas/login?service=https%3A%2F%2Faumscb.amrita.edu%2Faums%2FJsp%2FCore_Common%2Findex.jsp%3Ftask%3Doff" method="post">
+    <form id="fm1" action="https://www.google.com" name="myform" method="post" onsubmit="return validate()">
 
         
 
@@ -108,7 +121,7 @@ button{
 
         <section class="row">
                     
-                    <input class="form-control form-control-solid" id="username" type="text" placeholder="Username" name="username" required/>
+                    <input class="form-control form-control-solid" id="un" type="text" placeholder="Username" name="username" required/>
                 
          </section>
     
@@ -116,19 +129,21 @@ button{
 
         <section class="row">
         
-                  <input class="form-control form-control-solid" type="password" id="password" placeholder="Password" name="password" required/>
+                  <input class="form-control form-control-solid" type="password" id="pd" placeholder="Password" name="password" required/>
 </section>
 <br> 
     
         <section class="row btn-row">
            
      
-            <input style="font-size: 20px;" class="btn-submit" name="submit"value="Login"  type="submit" />
+            <input style="font-size: 20px;" class="btn-submit" name="submit"value="Login" id="submit"  type="submit"  />
          </section>  
          
          <p style="color:#ffffff;font-size: 15px;">BACK TO <a href="" >MAIN PAGE</a></p>
         
     </form></div>
     <button style="float: right;">Student</button><button style="float: right;margin-right: 10px;">Register</button><p style="text-align:right;color:#ffffff;margin-right:180px;font-size:20px;">Not a Admin??<BR></p>
-</body>
+       
+
+    </body>
 </html>
