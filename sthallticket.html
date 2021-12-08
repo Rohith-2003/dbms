@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="sthomecss.css">
+<style>
+.hall
+{
+    width: 30px;
+    height: 25px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.button
+{
+    background-color: red;
+    margin-left: 30px;
+    color: yellow;
+    padding: 5px;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+    <a href="sthome.html">HOME</a>
+  <a href="stprofile.html">PROFILE</a>
+  <a href="stcourse.html">COURSE</a>
+  <a href="stresult.html">RESULT</a>
+  <a href="sthallticket.html" class="active">HALL TICKET</a>
+</div>
+
+<div style="padding-left:16px;">
+  <h1><center style="font-size: 40px;">HALL TICKET</center></h2>
+</div>
+
+<div>
+    <form method="GET">
+        <div style="font-size: 25px;">
+            <h2>Do You Need Hall Ticket</h2>
+           <label>
+            <input class="hall" type="radio" name="halltic" value="YES">
+            <label><b>YES</b></label>
+            <br>
+            <input class="hall" type="radio" name="halltic" value="NO">
+            <label><b>NO</b></label> <br>
+            
+            <input class ="button" type="submit" value="SUBMIT">
+            <input class="button" type="reset" value="RESET">
+           </label>
+           
+        </div>
+    </form>
+</div>
+</body>
+</html>

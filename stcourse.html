@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="sthomecss.css">
+<style>
+.chbox
+{
+  width: 30px;
+  height: 25px;
+  padding: 50px;
+  margin-bottom: 35px;
+}
+.button
+{
+  padding: 12px 18px;
+  margin-left: 30px;
+  margin-right: 60px;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+    <a href="sthome.html">HOME</a>
+  <a href="stprofile.html">PROFILE</a>
+  <a href="stcourse.html" class="active">COURSE</a>
+  <a href="stresult.html">RESULT</a>
+  <a href="sthallticket.html">HALL TICKET</a>
+</div>
+
+<div style="padding-left:16px;">
+  <h1><center>Course Enrollment</center></h2>
+</div>
+<br><br>
+<div style="margin-left: 35%; font-size: 35px;">
+    <form method="GET">
+      <input class="chbox" type="checkbox" id="course1" name="course1" value="Dbms">
+      <label for="course1"> Database Management System</label><br>
+
+      <input class="chbox" type="checkbox" id="course2" name="course2" value="UID">
+      <label for="course2"> User Interface Design</label><br>
+
+      <input class="chbox" type="checkbox" id="course3" name="course3" value="PSAT">
+      <label for="course3"> Problem Solving and Algorithmic Thinking</label><br>
+
+      <input class="chbox" type="checkbox" id="course4" name="course4" value="OOPS">
+      <label for="course4"> Object Oriented Paradigm</label><br>
+      
+      <input class="chbox" type="checkbox" id="course5" name="course5" value="PR">
+      <label for="course5"> Program Reasoning</label><br>
+
+      <input class="chbox" type="checkbox" id="course6" name="course6" value="AP">
+      <label for="course6"> Advanced Programming</label><br><br>
+
+      <input class ="button" type="submit" value="SUBMIT">
+      <input class="button" type="reset" value="RESET">
+    </form>
+</div>
+</body>
+</html>
